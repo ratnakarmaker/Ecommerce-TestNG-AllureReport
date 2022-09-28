@@ -25,3 +25,8 @@ dependencies {
     // https://mvnrepository.com/artifact/io.qameta.allure/allure-testng
     implementation group: 'io.qameta.allure', name: 'allure-testng', version: '2.18.1'
 }
+test {
+    useTestNG() {
+        suites "./testng.xml"
+    }
+}
